@@ -4,7 +4,7 @@ This repository contains the implementation of the following paper:
 > **Mutual Information-Guided Cross-modal Alignment Perception Network for Clinical Multi-modal Fusion**<br>
 
 ## Framework
-<img width="880" height="380" src="https://github.com/1zhang-yi/MICAPNet/assets/MICAPNet.pdf">
+<img width="880" height="380" src="https://github.com/1zhang-yi/MICAPNet/blob/main/assets/MICAPNet.png">
 
 ## Prerequisites
 - Linux (We trained our codes on Ubuntu 20.04)
