@@ -13,16 +13,16 @@ This repository contains the implementation of the following paper:
 - Pytorch 1.13.1
 
 ## Todo list
-1. Please download the dataset [Abdomen](https://www.synapse.org/Synapse:syn3193805/wiki/217789)
-2. Please download the pretrain SAM checkpoint [vit-b SAM Model](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth)
-3. Run the preprocess_data script to preprocess the raw Abdomen dataset.
+1. Please download the dataset [MIMIC-IV](https://physionet.org/content/mimiciv/1.0/) and [MIMIC-CXR-JPG](https://physionet.org/content/mimic-cxr-jpg/2.0.0/).
+2. Follow the data pre-processing procedures and construct the paired dataset in https://github.com/nyuad-cai/MedFuse and https://github.com/dorothy-yao/drfuse.
+3. Run the resize.py to resize the X-ray data.
 
 ## Train
-Run the following command to train IRSL-2.5DSAM.
+Run the following command to train and test MICAPNet.
 ```bash
-python train.py --root_path <Your folder> --output <Your output path>
+python main.py --ehr_data_dir <Your ehr folder> --image_dir <Your X-ray folder> --save_checkpoints <Your output path>
 ```
 
 ## Acknowledgement
 - We appreciate all the developers and dataset owners for making public datasets available to the community.
-- Thanks to the open-source of the following projects: [Segment Anything](https://github.com/facebookresearch/segment-anything), [SAMed]( https://github.com/hitachinsk/SAMed), [SAM-Med2D](https://github.com/uni-medical/SAM-Med2D)
+- Thanks to the open-source of the following projects: [MedFuse](https://github.com/nyuad-cai/MedFuse), [DrFuse](https://github.com/dorothy-yao/drfuse), [CLUB](https://github.com/Linear95/CLUB) and [CMG](https://github.com/haihuangcode/CMG).
